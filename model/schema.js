@@ -2,19 +2,14 @@ const mongoose = require('mongoose');
 const schema = mongoose.Schema
 
 const blogschema = new schema({
-    title: {
+    recepi: {
         type: String,
         required: true
     },
-    snippet: {
+    Image: {
         type: String,
         required: true
     },
-    body: {
-        type: String,
-        required: true
-    }
-
  
 })
 const blog = mongoose.model('blogData', blogschema);

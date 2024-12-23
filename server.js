@@ -5,7 +5,7 @@ const mongodb=require('mongodb')
 const mongoose=require('mongoose');
 const blgRouter = require('./routes/blogroutes');
 
-mongoose.connect(dbURI)
+mongoose.connect("mongodb+srv://arunkumar:0102mongodb@cluster0.u333g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 .then((result)=>{
     console.log("Connected to db");
     console.log("listen at 2000");
